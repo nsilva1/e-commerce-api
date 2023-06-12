@@ -15,6 +15,7 @@ class BaseUser(BaseModel):
 
 
 class CreateUser(BaseUser):
+    authorizationCode: str
     password: str
 
 

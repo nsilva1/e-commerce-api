@@ -5,6 +5,7 @@ class Roles(str, Enum):
     support = "support"
     staff = "staff"
     customer = "customer"
+    super_admin = "super_admin"
 
 class OrderStatus(str, Enum):
     pending = "pending"
@@ -64,3 +65,13 @@ class DeliveryProvider(str, Enum):
     ni_post = "ni_post"
     net_electronics = "net_electronics"
 
+
+class AddressType(str, Enum):
+    billing = "billing"
+    shipping = "shipping"
+    both = "both"
+
+
+class AccessCode(str, Enum):
+    admin = "qwerty"
+    super_admin = "qwerty123"
