@@ -53,4 +53,7 @@ class UserDetails(BaseUser):
 
     class Config:
         orm_mode = True
-    
+
+
+class TokenData(BaseModel):
+    id: Optional[str] = None
